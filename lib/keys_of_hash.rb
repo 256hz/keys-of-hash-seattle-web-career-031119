@@ -6,7 +6,7 @@ class Hash
 
     self.each do |k, v|
       #binding.pry
-      return_array >> k if arguments.include?(self[k])
+      return_array << k if arguments.include?(self[k])
     end
     return_array
   end
