@@ -4,9 +4,9 @@ class Hash
   def keys_of(arguments)
     return_array = []
 
-    self.each do |e|
-      binding.pry
-      return_array >> e if arguments.include?(self[e])
+    self.each do |k, v|
+      #binding.pry
+      return_array >> k if arguments.include?(self[k])
     end
     return_array
   end
